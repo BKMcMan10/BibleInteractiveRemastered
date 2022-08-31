@@ -5,12 +5,12 @@ namespace fs = std::filesystem;
 
 #include"Rendering\Model.h"
 
-#include"ModelLoading/Shader.h"
-#include"ModelLoading/StaticModel.h"
+#include"ModelLoading\Shader.h"
+#include"ModelLoading\StaticModel.h"
 
 
-const unsigned int width = 800;
-const unsigned int height = 800;
+int width = 1920;
+int height = 1080;
 
 // Number of samples per pixel for MSAA
 unsigned int samples = 8;
@@ -307,7 +307,7 @@ int main()
 		if (timeDiff >= 1.0 / 30.0)
 		{
 
-			width = glfwW
+			//glfwGetWindowSize(window, &width, &height);
 
 			// Creates new title
 			std::string newTitle = "BibleInteractiveRemastered";
